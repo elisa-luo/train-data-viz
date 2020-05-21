@@ -38,7 +38,7 @@ dist_by_date = dist_by_date.unstack()
 #GROUP BY DATE AND ADJUSTED DISTANCE
 dist_by_date = train[["date","mode","adj_dist"]].groupby(["date","mode"]).sum()
 dist_by_date = dist_by_date.unstack()
-dist_by_date.plot.bar(stacked = True)
+#dist_by_date.plot.bar(stacked = True)
 
 
 #GROUP BY DATE AND TIME_ELAPSED
@@ -51,7 +51,7 @@ new.plot.bar(stacked = True)
 
 #GROUP BY MODE AND TIME_ELAPSED
 mode_per_time = train[["mode", "time_elapsed"]].groupby("mode").sum()
-#mode_per_time.plot.pie(subplots=True, figsize = (6,6))
+mode_per_time.plot.pie(subplots=True, figsize = (6,6))
 
 
 #GROUP BY MODE AND DISTANCE!
@@ -76,5 +76,11 @@ tday = thour/24
 print("You spent a total of {} minutes training over a period of {} days! That's {} hours or {} days!".format(tmin,date_range,thour,tday))
 
 #TOTAL DISTANCE
+tdist = mode_per_dist.sum()[0]
+earth = 40075 #source: google
+edist = (tdist/earth)*100
+print("You travelled a total of {} KM. That's {}% around the earth!".format(tdist,edist))
 
 #AVERAGE MINUTES/DAY
+amin = tmin/date_range
+print("You averaged {} minutes of training per day!".format(amin))
