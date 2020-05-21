@@ -1,8 +1,9 @@
 # train-data-viz
 Training data visualization & analysis through Python. A fun little tool for me to easily see and interpret the training I'm doing during quarantine, to make it less boring. Generates some fun stats to keep me motivated. #CircumnavigateTheGlobe
 
+**Author:** Elisa Luo eyl2130@columbia.edu. Columbia University Division I Women's Rowing. Yeah Lions!
+
 **Library:** used the pandas library. https://pandas.pydata.org/docs/index.html
-Author: Elisa Luo eyl2130@columbia.edu. Columbia University Division I Women's Rowing. Yeah Lions!
 
 **Input:** a .csv file with 4 columns: `date`, `mode` (bike, erg, run, lift), `time_elapsed`, and `distance` in KM. (metric, because we're not savages here. But perhaps will add a conversion option)
 
