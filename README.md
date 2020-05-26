@@ -1,6 +1,11 @@
 # train-data-viz
 Training data visualization & analysis through Python. A fun little tool for me to easily see and interpret the training I'm doing during quarantine, to make it less boring. Generates some fun stats to keep me motivated. #CircumnavigateTheGlobe
 
+***This is a work in progress.* COMING SOON!**
+- more readable date formatting
+- prettier & bigger graphs/chartss
+- web app????????????????
+
 **Author:** Elisa Luo eyl2130@columbia.edu. Columbia University Division I Women's Rowing. Yeah Lions!
 
 **Library:** used the pandas library. https://pandas.pydata.org/docs/index.html
